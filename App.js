@@ -11,6 +11,7 @@ import Home from './src/components/Home';
 import ToDoList from './src/components/ToDoList';
 import CountryList from './src/components/CountryList';
 import Preview from './src/components/Preview';
+import DetailImage from './src/components/DetailImage';
 LogBox.ignoreLogs([
   "[react-native-gesture-handler] Seems like you\'re using an old API with gesture components, check out new Gestures system!",
 ]);
@@ -31,6 +32,7 @@ export default function App() {
         <Stack.Screen name="ToDoList" component={ToDoList} options={styles} />
         <Stack.Screen name="CountryList" component={CountryList} options={styles}/>
         <Stack.Screen name="Preview" component={Preview} options={styles} />
+        <Stack.Screen name="DetailImage" component={DetailImage} options={styles} />
       </Stack.Navigator>
     </NavigationContainer>
   );

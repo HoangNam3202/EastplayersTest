@@ -1,4 +1,4 @@
-import { View, Text, StyleSheet, TouchableOpacity } from 'react-native';
+import { View, Text, StyleSheet, TouchableOpacity, Platform } from 'react-native';
 
 import { Icon } from 'react-native-elements';
 
@@ -57,7 +57,8 @@ const styles = StyleSheet.create({
         color: 'red',
         marginVertical: 10,
         alignSelf: 'center',
-        fontSize: 16
+        fontSize: 16,
+        marginTop: Platform.OS === 'ios' ? 20 : 50
     },
     btn_navigate: {
         shadowColor: "#000",
