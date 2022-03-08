@@ -109,7 +109,9 @@ const ToDoList = () => {
                                     {item.name}
                                 </Text>
                             </Text>
-                            <TouchableOpacity onPress={() => { handleDeleteTask(item) }}>
+                            <TouchableOpacity
+                                style={styles.btn_delete}
+                                onPress={() => { handleDeleteTask(item) }}>
                                 <Text>X</Text>
                             </TouchableOpacity>
                         </View>
@@ -133,7 +135,7 @@ const styles = StyleSheet.create({
         borderColor: 'lightgray',
         borderRadius: 5,
         marginHorizontal: 10,
-        padding: 4,
+        padding: 15,
         marginTop: 10,
         justifyContent: 'space-between',
         alignItems: 'center'
@@ -163,6 +165,11 @@ const styles = StyleSheet.create({
     },
     itemDot: {
         fontWeight: "bold",
+    },
+    btn_delete: {
+        padding: 5,
+        backgroundColor: '#fde9e7',
+        borderRadius: 2
     },
 });
 export default ToDoList;

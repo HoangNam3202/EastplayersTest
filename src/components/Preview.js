@@ -1,5 +1,7 @@
+import { useState } from "react";
 import { View, Text, StyleSheet } from "react-native";
 import GridImageView from 'react-native-grid-image-viewer';
+
 const Preview = () => {
     return (
         <View style={styles.container}>
@@ -22,6 +24,7 @@ const Preview = () => {
                     'https://www.w3schools.com/howto/img_forest.jpg',
                     'https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg',
                 ]} />
+            
         </View>
     );
 };

@@ -68,7 +68,7 @@ const styles = StyleSheet.create({
         shadowOpacity: 0.25,
         shadowRadius: 3.84,
         elevation: 5,
-        padding: 12,
+        padding: 20,
         display: 'flex',
         flexDirection: 'row',
         backgroundColor: 'white',
@@ -86,7 +86,7 @@ const styles = StyleSheet.create({
         textAlign: 'center',
         lineHeight: 30,
         fontWeight: 'bold',
-        marginRight: 10
+        marginRight: 10,
     },
     name: {
         flex: 8
